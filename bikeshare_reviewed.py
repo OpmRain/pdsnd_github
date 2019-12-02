@@ -14,6 +14,7 @@ weekday_options = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'frid
             'saturday')
 
 def user_selection(prompt, available_options=('y', 'n')):
+      """Selects a specific user for operation"""
 
     while True:
         user_selection = input(prompt).lower().strip()
@@ -31,6 +32,8 @@ def user_selection(prompt, available_options=('y', 'n')):
 
 
 def get_filters():
+    
+    """Filters user selected"""
 
     print('Hello! Let\'s explore some US bikeshare data!')
 
@@ -56,6 +59,8 @@ def get_filters():
 
 
 def load_data(city, month, day):
+
+    """Load CSV data with pandas"""
 
     # This part will filter out data according to user selection
     if isinstance(city, list):
