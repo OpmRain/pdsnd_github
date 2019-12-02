@@ -32,6 +32,8 @@ def user_selection(prompt, available_options=('y', 'n')):
 
 
 def get_filters():
+    
+    """Filters user selected"""
 
     print('Hello! Let\'s explore some US bikeshare data!')
 
