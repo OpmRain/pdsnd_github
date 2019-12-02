@@ -14,6 +14,7 @@ weekday_options = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'frid
             'saturday')
 
 def user_selection(prompt, available_options=('y', 'n')):
+      """Selects a specific user for operation"""
 
     while True:
         user_selection = input(prompt).lower().strip()
