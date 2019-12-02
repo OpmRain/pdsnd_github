@@ -214,6 +214,8 @@ def show_raw_data(df, pointer_spot):
 
 
 def main():
+      """Runs main application"""
+      
     while True:
         click.clear()
         city, month, day = get_filters()
